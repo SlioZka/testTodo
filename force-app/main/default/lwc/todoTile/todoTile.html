@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title={todo.Name}>
+        <lightning-layout vertical-align="center">
+            <lightning-layout-item padding="around-small">
+                <p>{todo.Title__c}</p> 
+                <p>{todo.Id}</p>       
+            </lightning-layout-item>
+        </lightning-layout>
+        <lightning-button 
+                label="Edit" 
+                onclick={editTodo}>
+        </lightning-button>
+        <lightning-button 
+                label="Delete" 
+                variant="destructive"                    
+                onclick={deleteTodo}>
+        </lightning-button>
+    </lightning-card>
+</template>
